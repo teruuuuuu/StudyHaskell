@@ -2,6 +2,9 @@ module HajimeteHaskell.Chap02.FizzBuzz
   ( fizuBuzzLoop
   , fizzBuzzFoldFunc
   , fizzBuzzFoM
+  , breakD
+  , addOneTwice
+  , checkAge
   ) where
 import Control.Monad 
   ( when
@@ -41,4 +44,11 @@ fizzBuzzFoM = do
                | n `mod` 5  == 0 = "Buzz"
                | otherwise       = show n
 
-               
+
+breakD = break (\n -> n == 'd')
+twice x = x ^ 2
+addOne x = x + 1
+
+addOneTwice = (twice . addOne)
+
+checkAge n = if n < 30 then 1 else 0

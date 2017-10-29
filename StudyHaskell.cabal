@@ -16,8 +16,13 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
+                       , HajimeteHaskell.Chap01.Basic
                        , HajimeteHaskell.Chap02.FizzBuzz
                        , HajimeteHaskell.Chap03.TreeDict
+                       , HajimeteHaskell.Chap03.Employee
+                       , SugoiHaskell.Chap06.PhoneBook
+                       , SugoiHaskell.Chap06.Geometry
+                       , SugoiHaskell.Chap10.Heathrow
                        , Try.TFold
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
@@ -35,6 +40,10 @@ test-suite StudyHaskell-test
   hs-source-dirs:      test
   main-is:             Spec.hs
   other-modules:       Try.TFoldSpec
+                     , HajimeteHaskell.Chap02.HajiChap02Spec
+                     , SugoiHaskell.Chap06.PhoneBookSpec
+                     , SugoiHaskell.Chap06.GeometrySpec
+                     , SugoiHaskell.Chap10.HeathrowSpec
   build-depends:       base
                      , HUnit
                      , StudyHaskell
