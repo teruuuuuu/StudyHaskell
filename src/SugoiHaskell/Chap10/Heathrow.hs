@@ -4,6 +4,8 @@ module SugoiHaskell.Chap10.Heathrow
 , roadStep
 , heathrowToLondon  
 , optimalPath
+, Label
+, Path
 , dist
 ) where
 

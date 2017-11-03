@@ -20,11 +20,18 @@ library
                        , HajimeteHaskell.Chap02.FizzBuzz
                        , HajimeteHaskell.Chap03.TreeDict
                        , HajimeteHaskell.Chap03.Employee
+                       , HajimeteHaskell.Chap03.Greeting
+                       , HajimeteHaskell.Chap07.ParseDateTime
+                       , HajimeteHaskell.Chap09.Data.Hjq.Parser
                        , SugoiHaskell.Chap06.PhoneBook
                        , SugoiHaskell.Chap06.Geometry
+                       , SugoiHaskell.Chap07.Tree
                        , SugoiHaskell.Chap10.Heathrow
                        , Try.TFold
   build-depends:       base >= 4.7 && < 5
+                       , attoparsec
+                       , split
+                       , text
   default-language:    Haskell2010
 
 executable StudyHaskell-exe
@@ -41,12 +48,17 @@ test-suite StudyHaskell-test
   main-is:             Spec.hs
   other-modules:       Try.TFoldSpec
                      , HajimeteHaskell.Chap02.HajiChap02Spec
+                     , HajimeteHaskell.Chap03.GreetingSpec
+                     , HajimeteHaskell.Chap07.ParseDateTimeSpec
+                     , HajimeteHaskell.Chap09.Data.Hjq.ParserSpec
                      , SugoiHaskell.Chap06.PhoneBookSpec
                      , SugoiHaskell.Chap06.GeometrySpec
+                     , SugoiHaskell.Chap07.TreeSpec
                      , SugoiHaskell.Chap10.HeathrowSpec
   build-depends:       base
                      , HUnit
                      , StudyHaskell
+                     , text
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
   default-language:    Haskell2010
 
