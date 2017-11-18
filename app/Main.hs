@@ -1,14 +1,14 @@
 module Main where
 
 import Lib
--- import HajimeteHaskell.Chap01.Basic
--- import HajimeteHaskell.Chap02.FizzBuzz
--- import HajimeteHaskell.Chap03.TreeDict 
+-- import Book.HajimeteHaskell.Chap01.Basic
+-- import Book.HajimeteHaskell.Chap02.FizzBuzz
+-- import Book.HajimeteHaskell.Chap03.TreeDict 
 
--- import SugoiHaskell.Chap06.PhoneBook
--- import SugoiHaskell.Chap10.Heathrow
+-- import Book.SugoiHaskell.Chap06.PhoneBook
+-- import Book.SugoiHaskell.Chap10.Heathrow
 -- import Try.TFold
-import HajimeteHaskell.Chap07.ParseDateTime
+import Book.HajimeteHaskell.Chap07.ParseDateTime
 
 main :: IO ()
 main = do

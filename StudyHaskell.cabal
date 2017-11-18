@@ -16,17 +16,17 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
-                       , HajimeteHaskell.Chap01.Basic
-                       , HajimeteHaskell.Chap02.FizzBuzz
-                       , HajimeteHaskell.Chap03.TreeDict
-                       , HajimeteHaskell.Chap03.Employee
-                       , HajimeteHaskell.Chap03.Greeting
-                       , HajimeteHaskell.Chap07.ParseDateTime
-                       , HajimeteHaskell.Chap09.Data.Hjq.Parser
-                       , SugoiHaskell.Chap06.PhoneBook
-                       , SugoiHaskell.Chap06.Geometry
-                       , SugoiHaskell.Chap07.Tree
-                       , SugoiHaskell.Chap10.Heathrow
+                       , Book.HajimeteHaskell.Chap01.Basic
+                       , Book.HajimeteHaskell.Chap02.FizzBuzz
+                       , Book.HajimeteHaskell.Chap03.TreeDict
+                       , Book.HajimeteHaskell.Chap03.Employee
+                       , Book.HajimeteHaskell.Chap03.Greeting
+                       , Book.HajimeteHaskell.Chap07.ParseDateTime
+                       , Book.HajimeteHaskell.Chap09.Data.Hjq.Parser
+                       , Book.SugoiHaskell.Chap06.PhoneBook
+                       , Book.SugoiHaskell.Chap06.Geometry
+                       , Book.SugoiHaskell.Chap07.Tree
+                       , Book.SugoiHaskell.Chap10.Heathrow
                        , Try.TFold
   build-depends:       base >= 4.7 && < 5
                        , attoparsec
@@ -47,14 +47,14 @@ test-suite StudyHaskell-test
   hs-source-dirs:      test
   main-is:             Spec.hs
   other-modules:       Try.TFoldSpec
-                     , HajimeteHaskell.Chap02.HajiChap02Spec
-                     , HajimeteHaskell.Chap03.GreetingSpec
-                     , HajimeteHaskell.Chap07.ParseDateTimeSpec
-                     , HajimeteHaskell.Chap09.Data.Hjq.ParserSpec
-                     , SugoiHaskell.Chap06.PhoneBookSpec
-                     , SugoiHaskell.Chap06.GeometrySpec
-                     , SugoiHaskell.Chap07.TreeSpec
-                     , SugoiHaskell.Chap10.HeathrowSpec
+                     , Book.HajimeteHaskell.Chap02.HajiChap02Spec
+                     , Book.HajimeteHaskell.Chap03.GreetingSpec
+                     , Book.HajimeteHaskell.Chap07.ParseDateTimeSpec
+                     , Book.HajimeteHaskell.Chap09.Data.Hjq.ParserSpec
+                     , Book.SugoiHaskell.Chap06.PhoneBookSpec
+                     , Book.SugoiHaskell.Chap06.GeometrySpec
+                     , Book.SugoiHaskell.Chap07.TreeSpec
+                     , Book.SugoiHaskell.Chap10.HeathrowSpec
   build-depends:       base
                      , HUnit
                      , StudyHaskell
