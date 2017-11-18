@@ -16,6 +16,7 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
+                       , Book.BasicOfFp.Chap01.Coord
                        , Book.HajimeteHaskell.Chap01.Basic
                        , Book.HajimeteHaskell.Chap02.FizzBuzz
                        , Book.HajimeteHaskell.Chap03.TreeDict
@@ -47,6 +48,7 @@ test-suite StudyHaskell-test
   hs-source-dirs:      test
   main-is:             Spec.hs
   other-modules:       Try.TFoldSpec
+                     , Book.BasicOfFp.Chap01.CoordSpec
                      , Book.HajimeteHaskell.Chap02.HajiChap02Spec
                      , Book.HajimeteHaskell.Chap03.GreetingSpec
                      , Book.HajimeteHaskell.Chap07.ParseDateTimeSpec
