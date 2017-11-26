@@ -7,7 +7,10 @@ import Try.TFoldSpec
 import Book.BasicOfFp.Chap01.CoordSpec
 
 import Book.HajimeteHaskell.Chap02.HajiChap02Spec
+import Book.HajimeteHaskell.Chap03.EmployeeSpec
 import Book.HajimeteHaskell.Chap03.GreetingSpec
+import Book.HajimeteHaskell.Chap03.IntToArraySpec
+import Book.HajimeteHaskell.Chap05.Hajimete05Spec
 import Book.HajimeteHaskell.Chap07.ParseDateTimeSpec
 import Book.HajimeteHaskell.Chap09.Data.Hjq.ParserSpec
 
@@ -22,6 +25,9 @@ main = do
   runTestTT $ TestList
     [ 
         "spec test 1" ~: 1 + 1 ~?= 2
+    -- , hajimete05TestList
+    -- , employeeTestList
+    -- , intToArrayTestList
     -- , coordTestList 
     -- ,  tFoldTestList
     -- ,  hajiChap02TestList

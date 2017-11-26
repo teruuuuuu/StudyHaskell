@@ -22,12 +22,15 @@ library
                        , Book.HajimeteHaskell.Chap03.TreeDict
                        , Book.HajimeteHaskell.Chap03.Employee
                        , Book.HajimeteHaskell.Chap03.Greeting
+                       , Book.HajimeteHaskell.Chap03.IntToArray
+                       , Book.HajimeteHaskell.Chap05.Hajimete05
                        , Book.HajimeteHaskell.Chap07.ParseDateTime
                        , Book.HajimeteHaskell.Chap09.Data.Hjq.Parser
                        , Book.SugoiHaskell.Chap06.PhoneBook
                        , Book.SugoiHaskell.Chap06.Geometry
                        , Book.SugoiHaskell.Chap07.Tree
                        , Book.SugoiHaskell.Chap10.Heathrow
+                       , Book.SugoiHaskell.Chap12.Tree
                        , Try.TFold
   build-depends:       base >= 4.7 && < 5
                        , attoparsec
@@ -50,7 +53,10 @@ test-suite StudyHaskell-test
   other-modules:       Try.TFoldSpec
                      , Book.BasicOfFp.Chap01.CoordSpec
                      , Book.HajimeteHaskell.Chap02.HajiChap02Spec
+                     , Book.HajimeteHaskell.Chap03.IntToArraySpec
+                     , Book.HajimeteHaskell.Chap03.EmployeeSpec
                      , Book.HajimeteHaskell.Chap03.GreetingSpec
+                     , Book.HajimeteHaskell.Chap05.Hajimete05Spec
                      , Book.HajimeteHaskell.Chap07.ParseDateTimeSpec
                      , Book.HajimeteHaskell.Chap09.Data.Hjq.ParserSpec
                      , Book.SugoiHaskell.Chap06.PhoneBookSpec
